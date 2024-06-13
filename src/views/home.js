@@ -131,7 +131,7 @@ const Home = (props) => {
                 {/* <span>{t("features")}</span> */}
                 <br></br>
               </span>
-              <h2 className="home-features-heading heading2">
+              <h2 className="home-features-heading heading3">
                 {t("features_heading")}
               </h2>
               <span className="home-features-sub-heading bodyLarge">

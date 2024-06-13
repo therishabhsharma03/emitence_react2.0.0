@@ -53,7 +53,7 @@ const Dholera = (props) => {
             <h1 className="home-hero-heading heading2"></h1>
             <span className="home-hero-sub-heading bodyLarge"></span>
             <div className="home-btn-group"></div>
-            <h2 className="home-features-heading heading1">
+            <h2 className="home-features-heading heading11">
               Dholera
             </h2>
           </div>

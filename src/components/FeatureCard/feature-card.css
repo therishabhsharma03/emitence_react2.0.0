@@ -13,6 +13,10 @@
 @media(max-width: 767px) {
   .feature-card-feature-card {
     flex-direction: row;
+    flex-direction: row;
+    /* margin: auto; */
+    /* padding: 56px; */
+    margin-top: 120px;
   }
   .feature-card-container {
     flex-direction: column;
