@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import '../../views/home.css';
 import "../../i18n";
-
+import "./nav.css";
 const isUserLoggedIn = !!localStorage.getItem("user");
 
-const Nav = (props) => {
+const Nav = () => {
   const { t } = useTranslation();
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
-  
+
   const handleMouseEnter = () => {
     setDropdownVisible(true);
   };
@@ -27,17 +27,22 @@ const Nav = (props) => {
     setMobileMenuVisible(false);
   };
 
+  useEffect(() => {
+    // Ensure mobile menu is closed when the component mounts
+    setMobileMenuVisible(false);
+  }, []);
+
   return (
     <div className="home-container">
       <div className="home-header">
-        <header data-thq="thq-navbar" className="navbarContainer home-navb ar-interactive">
-          <a href='/'><img src="images/logo.png" alt="Logo" className="logo" /></a>
+        <header data-thq="thq-navbar" className="navbarContainer home-navbar-interactive">
+          <img src="images/logo.png" alt="Logo" className="logo" />
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
             <nav className="home-links">
-              <Link className="bodySmall buttonFilled" spy={true} smooth={true} offset={-70} duration={500} to="/">
+              <Link className="bodySmall buttonFilled" to="/">
                 {t("home")}
               </Link>
-              <Link className="home-nav42 bodySmall buttonFilled" spy={true} smooth={true} offset={-70} duration={500} to="/aboutus">
+              <Link className="home-nav42 bodySmall buttonFilled" to="/aboutus">
                 {t("about")}
               </Link>
               <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -51,15 +56,15 @@ const Nav = (props) => {
                   </div>
                 )}
               </div>
-              <Link className="home-nav42 bodySmall buttonFilled" spy={true} smooth={true} offset={-70} duration={500} to="/guide">
+              <Link className="home-nav42 bodySmall buttonFilled" to="/guide">
                 Blogs
               </Link>
-              <Link className="home-nav42 bodySmall buttonFilled" spy={true} smooth={true} offset={-70} duration={500} to="/contactus">
+              <Link className="home-nav42 bodySmall buttonFilled" to="/contactus">
                 Contact Us
               </Link>
               {isUserLoggedIn && (
-                <Link className="home-nav42 bodySmall" spy={true} smooth={true} offset={-70} duration={500} to="/predictor">
-                  {t("pridiction")}
+                <Link className="home-nav42 bodySmall" to="/predictor">
+                  {t("prediction")}
                 </Link>
               )}
             </nav>
@@ -81,13 +86,13 @@ const Nav = (props) => {
                   </div>
                 </div>
                 <nav className="home-links1">
-                  <Link className="bodySmall home-nav42 buttonFilled" spy={true} smooth={true} offset={-70} duration={500} to="/" onClick={closeMobileMenu}>
+                  <Link className="bodySmall home-nav42 buttonFilled" to="/" onClick={closeMobileMenu}>
                     {t("home")}
                   </Link>
-                  <Link className="bodySmall home-nav42 buttonFilled" spy={true} smooth={true} offset={-70} duration={500} to="/aboutus" onClick={closeMobileMenu}>
+                  <Link className="bodySmall home-nav42 buttonFilled" to="/aboutus" onClick={closeMobileMenu}>
                     {t("about")}
                   </Link>
-                  <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                  <div className="dropdown">
                     <span className="dropdown-toggle home-nav42 bodySmall buttonFilled">
                       Projects
                     </span>
@@ -98,10 +103,10 @@ const Nav = (props) => {
                       </div>
                     )}
                   </div>
-                  <Link className="home-nav42 bodySmall buttonFilled" spy={true} smooth={true} offset={-70} duration={500} to="/guide" onClick={closeMobileMenu}>
+                  <Link className="home-nav42 bodySmall buttonFilled" to="/guide" onClick={closeMobileMenu}>
                     Blogs
                   </Link>
-                  <Link className="home-nav42 bodySmall buttonFilled" spy={true} smooth={true} offset={-70} duration={500} to="/contactus" onClick={closeMobileMenu}>
+                  <Link className="home-nav42 bodySmall buttonFilled" to="/contactus" onClick={closeMobileMenu}>
                     Contact Us
                   </Link>
                 </nav>

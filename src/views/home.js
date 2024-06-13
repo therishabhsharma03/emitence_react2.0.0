@@ -6,12 +6,15 @@ import { useHistory } from 'react-router-dom'
 
 import FeatureCard from '../components/FeatureCard/feature-card'
 import Question1 from '../components/question1'
+// import { Link } from '@mui/material';
+import { Link } from 'react-router-dom';
 // import './home.css'
+// import '../style.css';
 //import MyForm from '../components/Form'
 
 const Home = (props) => {
   const history = useHistory();
-
+  
   const isUserLoggedIn = !!localStorage.getItem('user');
 
   const handleClick = () => {
@@ -117,8 +120,8 @@ const Home = (props) => {
               </span>
             </span>
             <div className="home-btn-group">
-              {/* <button className="buttonFilled" onClick={handleClick}>{t("sub_greeting_btn1")}</button>
-              <button className="buttonFlat" onClick={handleClick1}>{t("sub_greeting_btn2")}→</button> */}
+              {/* <button className="buttonFlat" onClick={handleClick1}>{t("sub_greeting_btn2")}→</button> */}
+              {/* <button className="buttonFilled" onClick={handleClick}>{t("sub_greeting_btn1")}</button> */}
             </div>
           </div>
         </div>
@@ -144,16 +147,18 @@ const Home = (props) => {
 
           <div class="locations">
             <div class="location">
-                <a href="dholera">
+          <Link to="/dholera">
                     <img src="images/dhol1.png" alt="Dholera"/>
                     <h2 className='bodyMedium'>Dholera</h2>
-                </a>
+          </Link>
             </div>
             <div class="location">
-                <a href="mumbai">
+              <Link to="/mumbai">
                     <img src="images/mum.png" alt="Mumbai"/>
                     <h2 className='bodyMedium' >Mumbai</h2>
-                </a>
+              </Link>
+                {/* <a href="mumbai"> */}
+                {/* </a> */}
             </div>
         </div>
             </section>
