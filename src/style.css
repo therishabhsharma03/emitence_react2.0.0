@@ -85,7 +85,7 @@
   transform: none !important;
 }
 .buttonFilled {
-  margin: 10px;
+  margin: 0px;
   color: var(--dl-color-custom-neutral-light);
   transition: 0.3s;
   font-family: Cabin;
@@ -569,7 +569,7 @@
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
-  width: 300px;
+  width: 200px;
 }
 .heading11 {
   font-size: 90px;
