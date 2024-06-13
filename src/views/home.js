@@ -117,8 +117,8 @@ const Home = (props) => {
               </span>
             </span>
             <div className="home-btn-group">
-              <button className="buttonFilled" onClick={handleClick}>{t("sub_greeting_btn1")}</button>
-              <button className="buttonFlat" onClick={handleClick1}>{t("sub_greeting_btn2")}→</button>
+              {/* <button className="buttonFilled" onClick={handleClick}>{t("sub_greeting_btn1")}</button>
+              <button className="buttonFlat" onClick={handleClick1}>{t("sub_greeting_btn2")}→</button> */}
             </div>
           </div>
         </div>
