@@ -32,6 +32,12 @@
     padding: 100px;
     border-radius: 8px;
   }
+  @media screen and (max-width: 768px) {
+    .blog-content {
+      padding: 13px;
+    }
+    
+  }
   
   .blog-title {
     font-size: 2rem;
