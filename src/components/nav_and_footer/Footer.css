@@ -3,7 +3,7 @@
 .site-footer {
     background-color: #000;
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 20px;
     position: relative;
     font-family: Arial, sans-serif;
   }
@@ -27,7 +27,7 @@
     font-size: 20px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #f1f1f1;
+    color: #ffdc23;
   }
   
   .site-footer address {
@@ -78,5 +78,27 @@
     width: 3rem;
     height: 3rem;
     border-width: 0.3rem;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 767px) {
+    .site-footer .row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .site-footer .widget {
+      margin-bottom: 20px;
+    }
+  
+    .site-footer .float-start {
+      float: none;
+    }
+  
+    .site-footer .list-unstyled {
+      display: inline-block;
+      padding: 0;
+    }
   }
   

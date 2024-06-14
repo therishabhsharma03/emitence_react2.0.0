@@ -291,7 +291,7 @@
     flex-direction: column;
     padding-bottom: var(--dl-space-space-sixunits);
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(93, 78, 78, 0.5)), url(/images/flat.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(77, 55, 55, 0.616)), url(/images/bg.webp);
     /* background-image: url(/img/background.jpg);   */
     background-size: cover;
     background-position: center;
@@ -402,6 +402,26 @@
   padding-bottom: var(--dl-space-space-sixunits);
   justify-content: center;
   background-image: linear-gradient(rgba(90, 88, 7, 0.59), rgba(0, 0, 0, 0.5)), url(/images/emitence_dholera.png);
+  /* background-image: url(/img/background.jpg);   */
+  background-size: cover;
+  background-position: center;
+
+}
+.heroContainer_contact{
+  display: border-box;
+  color: var(--dl-color-custom-secondary1);
+  width: 100%;
+  display: flex;
+  /* min-height: auto; */
+  height: 100vh;
+  align-items: center;
+  padding-top: var(--dl-space-space-sixunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-sixunits);
+  justify-content: center;
+  background-image: linear-gradient(rgba(90, 88, 7, 0.59), rgba(0, 0, 0, 0.5)), url(/images/sofa.png);
   /* background-image: url(/img/background.jpg);   */
   background-size: cover;
   background-position: center;
