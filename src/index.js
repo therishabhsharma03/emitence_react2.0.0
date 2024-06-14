@@ -17,6 +17,7 @@ import Mumabai from './views/mumbai';
 import PropertyPage from './components/PropertyPages/property';
 import Contact_us from './views/contactus';
 import Dholera from './views/dholera';
+import Footer from './components/nav_and_footer/footer';
 const App = () => {
   // const selectedCrop = 'rice';
   const validCrops = [`rice`,`wheat`, `kidneybeans`, `barley`,'mothbeans','chickpeas  ','pigeonpeas','maize','mungbean','blackgram','lentil','pomegranate','banana','mango','grapes','watermelon','muskmelon','apple','orange','papaya','coconut','cotton','jute','coffee'];
@@ -43,6 +44,7 @@ const App = () => {
           ))}
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

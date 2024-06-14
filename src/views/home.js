@@ -143,16 +143,20 @@ const Home = (props) => {
 
           <div class="locations">
             <div class="location">
-          <Link to="/dholera">
+                <a href="dholera">
                     <img src="images/dhol1.png" alt="Dholera"/>
                     <h2 className='bodyMedium'>Dholera</h2>
-          </Link>
+                </a>
+          
             </div>
             <div class="location">
-              <Link to="/mumbai">
+              
+              <a href="mumbai">
                     <img src="images/mum.png" alt="Mumbai"/>
                     <h2 className='bodyMedium' >Mumbai</h2>
-              </Link>
+
+              </a>
+              
                 {/* <a href="mumbai"> */}
                 {/* </a> */}
             </div>
