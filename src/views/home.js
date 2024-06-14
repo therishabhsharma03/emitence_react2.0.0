@@ -253,9 +253,9 @@ const Home = (props) => {
           </h1>
           <span className="home-banner-sub-heading bodySmall">
             <span>
-              <span>
-                
-                 {t("home_page_empower_sub")}
+              <span className='justify'>
+              We are committed to turning your real estate dreams into reality with unwavering dedication and precision. Our expert team ensures every detail is meticulously handled, providing you with the best possible experience in finding your perfect property. Whether you're buying, selling, or investing, trust Emitenc Realty to guide you every step of the way.
+                 {/* {t("home_page_empower_sub")} */}
                 
                 <span>
                   <span

@@ -276,6 +276,9 @@
   color: var(--dl-color-custom-neutral-dark);
   background-color: var(--dl-color-emitence-black);
 }
+.justify{
+  text-align: justify;
+}
 .heroContainer {
     display: border-box;
 
