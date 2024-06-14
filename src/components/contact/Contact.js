@@ -12,7 +12,7 @@ const ContactUs = () => {
             <span className="home-hero-sub-heading bodyLarge"></span>
             <div className="home-btn-group"></div>
             <h2 className="home-features-heading heading11">
-              Dholera
+              Get in Touch
             </h2>
           </div>
         </div>
@@ -36,7 +36,7 @@ const ContactUs = () => {
         <h3 className='bodySmall goldText' >Email:</h3>
         <p>admin@emitencerealty.com</p>
         <h3 className='bodySmall goldText'>Call:</h3>
-        <p>+91 315915523737</p>
+        <p>+91 92652 59234</p>
       </div>
       <div className="contact-form">
         <h3>Name:</h3>
@@ -46,8 +46,9 @@ const ContactUs = () => {
         <h3>Preferred City &amp; Location:</h3>
         <select>
           <option value="mumbai">Mumbai</option>
+          <option value="mumbai">Dholera</option>
         </select>
-        <h3>Typology:</h3>
+        {/* <h3>Typology:</h3>
         <div className="typology-options">
           <div>
             <input type="radio" id="1rk" name="typology" value="1rk" />
@@ -67,7 +68,7 @@ const ContactUs = () => {
           <option value="10-15cr">10 To 15 Cr</option>
         </select>
         <h3>Message:</h3>
-        <textarea placeholder="Drop a message (optional)"></textarea>
+        <textarea placeholder="Drop a message (optional)"></textarea> */}
         <button type="submit">Submit</button>
       </div>
     </div>

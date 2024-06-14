@@ -75,7 +75,7 @@ const Dholera = (props) => {
 
           </div>
         </div>
-        <ParallaxComponent image="/images/emitence_about.jpg" alignment="left" bg_align="right">
+        <ParallaxComponent image="/images/emitence_about.jpg" alignment="right" bg_align="left">
       
 
           <h2 className='bodyLarge goldText'>Planned Smart City</h2>
@@ -93,7 +93,7 @@ const Dholera = (props) => {
         </ParallaxComponent>
         
 
-        <ParallaxComponent image="/images/emitence_dholera.png" alignment="right" bg_align="left">
+        <ParallaxComponent image="/images/emitence_dholera.png" alignment="left" bg_align="right">
           <h2 className='bodyLarge goldText'>Geographical Location</h2>
           <div className='news'>
             {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" /> */}
@@ -109,7 +109,7 @@ const Dholera = (props) => {
         <section className="content-section">
 
         </section>
-        <ParallaxComponent image="/images/dholera_3.jpg" alignment="left" bg_align="right">
+        <ParallaxComponent image="/images/dholera_3.jpg" alignment="right" bg_align="left">
           <h2 className='bodyLarge goldText'>Economic Opportunities</h2>
           <div className='news'>
             {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" /> */}

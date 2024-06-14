@@ -18,6 +18,7 @@ import PropertyPage from './components/PropertyPages/property';
 import Contact_us from './views/contactus';
 import Dholera from './views/dholera';
 import Footer from './components/nav_and_footer/footer';
+import BlogTemplate from './components/blog/blogtemplate';
 const App = () => {
   // const selectedCrop = 'rice';
   const validCrops = [`rice`,`wheat`, `kidneybeans`, `barley`,'mothbeans','chickpeas  ','pigeonpeas','maize','mungbean','blackgram','lentil','pomegranate','banana','mango','grapes','watermelon','muskmelon','apple','orange','papaya','coconut','cotton','jute','coffee'];
@@ -27,7 +28,7 @@ const App = () => {
         <Nav />
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/guide" component={Guide} exact />
+          <Route path="/blog" component={BlogTemplate} exact />
           <Route path="/log" component={Log} exact />
           <Route path='/aboutus' component={About} />
           <Route path='/predictor' component={ImageUploadForm} />

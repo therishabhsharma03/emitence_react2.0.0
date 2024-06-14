@@ -64,7 +64,7 @@ const Nav = () => {
                   </div>
                 )}
               </div>
-              <Link className="home-nav42 bodySmall buttonFilled" to="/guide">
+              <Link className="home-nav42 bodySmall buttonFilled" to="/blog">
                 Blogs
               </Link>
               <Link className="home-nav42 bodySmall buttonFilled" to="/contactus">
@@ -111,7 +111,7 @@ const Nav = () => {
                       </div>
                     )}
                   </div>
-                  <Link className="home-nav42 bodySmall buttonFilled" to="/guide" onClick={closeMobileMenu}>
+                  <Link className="home-nav42 bodySmall buttonFilled" to="/blog" onClick={closeMobileMenu}>
                     Blogs
                   </Link>
                   <Link className="home-nav42 bodySmall buttonFilled" to="/contactus" onClick={closeMobileMenu}>
