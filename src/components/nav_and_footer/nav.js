@@ -10,6 +10,7 @@ const Nav = () => {
   const { t } = useTranslation();
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const [mobileDropdownVisible, setMobileDropdownVisible] = useState(false);
 
   const handleMouseEnter = () => {
     setDropdownVisible(true);
@@ -21,10 +22,17 @@ const Nav = () => {
 
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
+    // Close dropdown when mobile menu toggles
+    setMobileDropdownVisible(false);
   };
 
   const closeMobileMenu = () => {
     setMobileMenuVisible(false);
+    setMobileDropdownVisible(false);
+  };
+
+  const toggleMobileDropdown = () => {
+    setMobileDropdownVisible(!mobileDropdownVisible);
   };
 
   useEffect(() => {
@@ -45,10 +53,10 @@ const Nav = () => {
               <Link className="home-nav42 bodySmall buttonFilled" to="/aboutus">
                 {t("about")}
               </Link>
-              <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <span className="dropdown-toggle home-nav42 bodySmall buttonFilled">
+              <div className="dropdown bodySmall buttonFilled" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                {/* <span className="dropdown-toggle home-nav42 bodySmall buttonFilled"> */}
                   Projects
-                </span>
+                {/* </span> */}
                 {dropdownVisible && (
                   <div className="dropdown-menu">
                     <Link to="/dholera" className="dropdown-item bodySmall">Dholera</Link>
@@ -78,7 +86,7 @@ const Nav = () => {
             <div data-thq="thq-mobile-menu" className="home-mobile-menu1 mobileMenu">
               <div className="home-nav">
                 <div className="home-top">
-                  <span className="logo">Emitence</span>
+                  {/* <span className="logo">Emitence</span> */}
                   <div data-thq="thq-close-menu" className="home-close-menu" onClick={closeMobileMenu}>
                     <svg viewBox="0 0 1024 1024" className="home-icon02 socialIcons">
                       <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -93,10 +101,10 @@ const Nav = () => {
                     {t("about")}
                   </Link>
                   <div className="dropdown">
-                    <span className="dropdown-toggle home-nav42 bodySmall buttonFilled">
+                    <span className="dropdown-toggle bodySmall buttonFilled" onClick={toggleMobileDropdown}>
                       Projects
                     </span>
-                    {dropdownVisible && (
+                    {mobileDropdownVisible && (
                       <div className="dropdown-menu">
                         <Link to="/dholera" className="home-nav42 bodySmall buttonFilled" onClick={closeMobileMenu}>Dholera</Link>
                         <Link to="/mumbai" className="home-nav42 bodySmall buttonFilled" onClick={closeMobileMenu}>Mumbai</Link>

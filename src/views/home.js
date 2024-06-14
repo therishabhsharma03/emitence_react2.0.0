@@ -37,10 +37,6 @@ const Home = (props) => {
 
   return (
     <div className="home-container">
-      <Helmet>
-        <title>CroPhecy</title>
-        <meta property="og:title" content="Fitting Devoted Jackal" />
-      </Helmet>
       <div className="home-hero">
         <div className="heroContainer home-hero1">
 {/* ****************************************************************** */}
