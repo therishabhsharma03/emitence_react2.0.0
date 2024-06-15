@@ -18,6 +18,8 @@ import PropertyPage from './components/PropertyPages/property';
 import Contact_us from './views/contactus';
 import Dholera from './views/dholera';
 import Footer from './components/nav_and_footer/footer';
+import PropertyDetails from './components/PropertyDetails/propertyDetails';
+
 const App = () => {
   // const selectedCrop = 'rice';
   const validCrops = [`rice`,`wheat`, `kidneybeans`, `barley`,'mothbeans','chickpeas  ','pigeonpeas','maize','mungbean','blackgram','lentil','pomegranate','banana','mango','grapes','watermelon','muskmelon','apple','orange','papaya','coconut','cotton','jute','coffee'];
@@ -36,6 +38,7 @@ const App = () => {
           <Route path='/dholera' component={Dholera} />
           <Route path = '/property' component = {PropertyPage} />
           <Route path = '/contactus' component = {Contact_us} />
+          <Route path = '/propertydetails' component = {PropertyDetails} />
           {/* <Route path='/"kidneybeans"' component= {Hero cropName={selectedCrop}} /> */}
           {validCrops.map((crop) => (
             <Route key={crop} path={`/${crop}`}>
