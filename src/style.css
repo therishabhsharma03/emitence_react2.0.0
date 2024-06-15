@@ -97,6 +97,27 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: var(--dl-color-custom-primary1);
 }
+.buttonFilled_nav{
+  margin: 0px;
+  color: var(--dl-color-custom-neutral-light);
+  transition: 0.3s;
+  font-family: Cabin;
+  font-weight: bold;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 48px;
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: var(--dl-color-custom-primary1);
+}
+
+  .buttonFilled_nav.sticky {
+    background-color: transparent; /* Change background to transparent */
+  }
+  
+  
+
+
 .buttonFilled:hover {
   background-color: var(--dl-color-custom-primary2);
 }
@@ -256,22 +277,44 @@
   justify-content: center;
   background-color: var(--dl-color-custom-accent1);
 }
+/* Base style for the navbar */
+/* Base style for the navbar */
 .navbarContainer {
   border-radius: 50px;
   color: var(--dl-color-custom-neutral-light);
   width: 70%;
   display: flex;
-  margin: 30px;
-  margin-top: 0px;
+  margin: 30px auto; /* Center the navbar horizontally */
+  margin-top: 20px; /* Initial margin from the top */
+  position: -webkit-sticky; /* For Safari */
   position: sticky;
+  top: 0; /* When scrolled, it will stick to the top */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-oneandhalfunits);
   justify-content: space-between;
-  background-color: var( --dl-color-emitence-black);
+  background-color: var(--dl-color-emitence-black);
+  z-index: 1000; /* Ensure it is above other elements */
 }
+
+.navbarContainer.sticky {
+  margin-top: 0; /* Remove the top margin when sticky */
+  padding-top: var(--dl-space-space-oneunit); /* Adjust padding if needed */
+  padding-bottom: var(--dl-space-space-oneunit); /* Adjust padding if needed */
+  border-bottom-left-radius: 50px; /* Adjust border-radius if needed */
+  border-top-right-radius: 50px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  width: 60%; /* Make sure it spans the full width */
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.747);
+
+
+}
+
 .mobileMenu {
   color: var(--dl-color-custom-neutral-dark);
   background-color: var(--dl-color-emitence-black);
