@@ -80,28 +80,44 @@ const Mumbai = (props) => {
           <h2 className='bodyLarge goldText'>Lodha Township</h2>
           <div>
           <PropertyCard
-                image="images/img_2.jpg"
-                projectName="Project One"
-                price='500,000'
-                type='Apartment'
-                location='Thane'
-              />
+            imageUrl = "/images/lodha-township-emitence3.jpg"
+            address = "Lodha Township, Mumbai"
+            bedrooms = "3"
+            bathrooms = "2"
+            squareFeet = "2000"
+            type = "Family"
+            price = "₹ 1.5 Cr"
+          />
           </div>
         </ParallaxComponent>
         
         <ParallaxComponent image="/images/hiranandani-emitence.jpg" alignment="right" bg_align="left">
           <h2 className='bodyLarge goldText'>Hiranandani Estate</h2>
-          <div className='news'>
-            {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" /> */}
-            <p className="bodySmall justify">Hiranandani Estate in Thane, developed by the Hiranandani Group over 200 acres, is a premium community with excellent road connectivity, including the Eastern Express Highway and Ghodbunder Road. It features upscale architecture and key projects like Attena and Barca. The area offers good schools, a hospital, shopping complexes, and educational institutions. Nearby employment hubs host numerous companies, providing ample job opportunities in and around Thane.</p>
+          <div>
+          <PropertyCard
+            imageUrl = "/images/hiranandani-emitence.jpg"
+            address = "Hiranandani Estate, Mumbai"
+            bedrooms = "3"
+            bathrooms = "2"
+            squareFeet = "2000"
+            type = "Family"
+            price = "₹ 1.5 Cr"
+          />
           </div>
         </ParallaxComponent>
 
         <ParallaxComponent image="/images/dholera_3.jpg" alignment="left" bg_align="right">
           <h2 className='bodyLarge goldText'>Godrej</h2>
-          <div className='news'>
-            {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" /> */}
-            <p className="bodySmall"> Godrej Emerald in Bhayanderpada, Thane, features excellent luxury residences. Godrej Emerald, Bhayanderpada, Thane is a magnificent Godrej Properties residential complex. The gorgeous design and excellent amenities will allow you to leave behind your stressful life and rest in the tranquil setting of your home. The project is enriched & fully equipped with the latest amenities and is located in Thane West, Mumbai.</p>
+          <div>
+          <PropertyCard
+            imageUrl = "/images/dholera_3.jpg"
+            address = "Godrej, Mumbai"
+            bedrooms = "3"
+            bathrooms = "2"
+            squareFeet = "2000"
+            type = "Family"
+            price = "₹ 1.5 Cr"
+          />
           </div>
         </ParallaxComponent>
       </div>
