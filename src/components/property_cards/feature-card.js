@@ -29,49 +29,49 @@
 // export default PropertyCard;
 
 import React from 'react';
-import { FaBed, FaBath, FaHome, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBed, FaBath, FaRulerCombined} from 'react-icons/fa';
+import { MdOutlineFamilyRestroom } from 'react-icons/md';
 import './PropertyCard.css';
 
-const PropertyCard = () => {
-  const property = {
-    imageUrl: 'https://www.google.com/imgres?q=img&imgurl=https%3A%2F%2Fres.klook.com%2Fimages%2Ffl_lossy.progressive%2Cq_65%2Fc_fill%2Cw_1200%2Ch_630%2Fw_80%2Cx_15%2Cy_15%2Cg_south_west%2Cl_Klook_water_br_trans_yhcmh3%2Factivities%2Ftsah7c9evnal289z5fig%2FIMG%2520Worlds%2520of%2520Adventure%2520Admission%2520Ticket%2520in%2520Dubai%2520-%2520Klook.jpg&imgrefurl=https%3A%2F%2Fwww.klook.com%2Fen-IN%2Factivity%2F2907-img-worlds-of-adventure-dubai%2F&docid=p_NeTio1_AougM&tbnid=fou8CTmBLy7VLM&vet=12ahUKEwjM4bWD9tyGAxVRsVYBHbrGDs0QM3oECBkQAA..i&w=1200&h=630&hcb=2&ved=2ahUKEwjM4bWD9tyGAxVRsVYBHbrGDs0QM3oECBkQAA',
-    address: '2861 62nd Ave, Oakland, CA 94605',
-    city: 'Oakland',
-    state: 'CA',
-    price: 649900,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    squareFeet: 1032,
-    type: 'Family',
-  };
+const PropertyCard = ({ imageUrl, address, bedrooms, bathrooms, squareFeet, type, price }) => {
+  // const property = {
+  //   imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcqgtsGNO_IfzYM6VPS8lNikw4JWE-gsEBjQ&s',
+  //   address: '2861 62nd Ave, Oakland, CA 94605',
+  //   bedrooms: 3,
+  //   bathrooms: 1,
+  //   squareFeet: 1032,
+  //   type: 'Family',
+  //   price: 649900,
+  // };
 
   return (
     <div className="property-card">
       <div className="property-image">
-        <img src={property.imageUrl} alt={property.address} />
-        <div className="property-price">${property.price.toLocaleString()}</div>
+        <img src={imageUrl} alt={address} />
       </div>
       <div className="property-details">
-        <h3>{property.address}</h3>
-        <div className="property-location">
-          <FaMapMarkerAlt className="location-icon" />
-          <span>{property.city}, {property.state}</span>
-        </div>
+        <div className="property-address">{address}</div>
         <div className="property-features">
           <div className="feature">
             <FaBed className="feature-icon" />
-            <span>{property.bedrooms} Beds</span>
+            <span>{bedrooms} Bed Room</span>
           </div>
           <div className="feature">
             <FaBath className="feature-icon" />
-            <span>{property.bathrooms} Baths</span>
-          </div>
-          <div className="feature">
-            <FaHome className="feature-icon" />
-            <span>{property.squareFeet} sqft</span>
+            <span>{bathrooms} Bath</span>
           </div>
         </div>
-        <div className="property-type">{property.type}</div>
+        <div className="property-features">
+        <div className="feature">
+          <FaRulerCombined className="feature-icon" />
+          <span>{squareFeet} sqft</span>
+        </div>
+        <div className="feature">
+        <MdOutlineFamilyRestroom className="feature-icon" />
+        <span>{type}</span>
+        </div>
+        </div>        
+        <div className="property-price">{price.toLocaleString()}</div>
         <button className="view-details-btn">View Details</button>
       </div>
     </div>
