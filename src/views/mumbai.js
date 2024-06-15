@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ParallaxComponent from '../components/parallex/ParallaxComponent';
+import PropertyCard from '../components/property_cards/feature-card';
 import './home.css';
 
 const Mumbai = (props) => {
@@ -77,10 +78,14 @@ const Mumbai = (props) => {
 
         <ParallaxComponent image="/images/lodha-township-emitence3.jpg" alignment="left" bg_align="right">
           <h2 className='bodyLarge goldText'>Lodha Township</h2>
-          <div className='news'>
-            {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" /> */}
-            <p className="bodySmall"> Lodha Amara, situated in Kolshet West, Thane, provides residents with exceptional amenities and limitless opportunities. Located in the bustling community of Thane, Lodha Amara Kolshet is conveniently near top educational institutions, shopping centers, premium retailers, and healthcare facilities, including both private and government hospitals. Thane's status as a corporate and business center ensures an easy commute for professionals. With a strong rental market, Lodha Amara represents a solid investment for both homeowners and renters.</p>
-              {/* <span className="goldText"> Emitence Realty </span> */}
+          <div>
+          <PropertyCard
+                image="images/img_2.jpg"
+                projectName="Project One"
+                price='500,000'
+                type='Apartment'
+                location='Thane'
+              />
           </div>
         </ParallaxComponent>
         
