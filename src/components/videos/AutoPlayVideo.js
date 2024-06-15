@@ -10,8 +10,19 @@ const AutoPlayVideo = ({ videoId, width, height, title, onVideoEnd }) => {
         if (!iframe) return;
 
         const isIntersecting = entry.isIntersecting;
-        const message = isIntersecting ? '{"event":"command","func":"playVideo","args":""}' : '{"event":"command","func":"pauseVideo","args":""}';
-        iframe.contentWindow.postMessage(message, '*');
+
+        const onLoad = () => {
+          const message = isIntersecting
+            ? '{"event":"command","func":"playVideo","args":""}'
+            : '{"event":"command","func":"pauseVideo","args":""}';
+          iframe.contentWindow.postMessage(message, '*');
+        };
+
+        if (iframe.contentWindow) {
+          onLoad();
+        } else {
+          iframe.addEventListener('load', onLoad);
+        }
       });
     };
 

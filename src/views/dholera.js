@@ -71,6 +71,7 @@ const Dholera = (props) => {
       <div className="App">
         <div className="home-features_dholera">
           <div className="featuresContainer">
+                <AutoPlayCarousel videos={videos} />
             <h2 className='bodyLarge goldText'>Why To Invest In Dholera?</h2>
             <div className='news'>
               <p className="bodySmall">Dholera is a city located in the Indian state of Gujarat. It is known for being
@@ -191,8 +192,7 @@ const Dholera = (props) => {
             <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" />
 
           </div>
-          <h1>Video Carousel</h1>
-          <AutoPlayCarousel videos={videos} />
+
           <div className="home-features1">
             <div className="home-container02">
               <span className="overline"><br /></span>
