@@ -122,7 +122,7 @@
   background-color: var(--dl-color-custom-primary2);
 }
 .buttonFilled_nav:hover {
-  background-color: var(--dl-color-custom-primary2);
+  background-color: #b2a13f;
 }
 .buttonFilledSecondary {
   color: var(--dl-color-custom-neutral-light);

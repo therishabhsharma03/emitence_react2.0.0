@@ -72,7 +72,7 @@ const Dholera = (props) => {
         <div className="home-features_dholera">
           <div className="featuresContainer">
                 <AutoPlayCarousel videos={videos} />
-            <h2 className='bodyLarge goldText'>Why To Invest In Dholera?</h2>
+            <h2 className='bodyLarge goldText pad'>Why To Invest In Dholera?</h2>
             <div className='news'>
               <p className="bodySmall">Dholera is a city located in the Indian state of Gujarat. It is known for being
                 part of the ambitious Dholera Special Investment Region (DSIR), which is one of

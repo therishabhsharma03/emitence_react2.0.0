@@ -5,14 +5,14 @@ const BlogTemplate = () => {
   return (
     <div className="blog-container">
       <header className="blog-header">
-        <div className="logo">Blog Logo</div>
+        {/* <div className="logo">Blog Logo</div>
         <nav className="blog-nav">
           <ul>
             <li><a href="/blog">Blog Home</a></li>
             <li><a href="/categories">Categories</a></li>
             <li><a href="/archive">Archive</a></li>
           </ul>
-        </nav>
+        </nav> */}
       </header>
       <main className="blog-content">
         <article className="blog-article">

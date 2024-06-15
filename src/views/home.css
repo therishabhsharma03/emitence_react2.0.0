@@ -1186,3 +1186,7 @@ button {
 .suggestions li:hover {
   background-color: #000000;
 }
+
+.pad{
+  padding: 20px;
+}
