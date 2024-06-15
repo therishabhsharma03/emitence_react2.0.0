@@ -60,7 +60,7 @@ const Nav = () => {
                 {dropdownVisible && (
                   <div className="dropdown-menu">
                     <Link to="/dholera" className="dropdown-item bodySmall">Dholera</Link>
-                    {/* <Link to="/mumbai" className="dropdown-item bodySmall">Mumbai</Link> */}
+                    <Link to="/mumbai" className="dropdown-item bodySmall">Mumbai</Link>
                   </div>
                 )}
               </div>
@@ -107,7 +107,7 @@ const Nav = () => {
                     {mobileDropdownVisible && (
                       <div className="dropdown-menu">
                         <Link to="/dholera" className="home-nav42 bodySmall buttonFilled" onClick={closeMobileMenu}>Dholera</Link>
-                        {/* <Link to="/mumbai" className="home-nav42 bodySmall buttonFilled" onClick={closeMobileMenu}>Mumbai</Link> */}
+                        <Link to="/mumbai" className="home-nav42 bodySmall buttonFilled" onClick={closeMobileMenu}>Mumbai</Link>
                       </div>
                     )}
                   </div>
