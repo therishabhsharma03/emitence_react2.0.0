@@ -103,7 +103,7 @@ const Nav = () => {
                   <div className="dropdown">
                     <span className="dropdown-toggle bodySmall buttonFilled" onClick={toggleMobileDropdown}>
                       Projects
-                    </span>
+                  </span>
                     {mobileDropdownVisible && (
                       <div className="dropdown-menu">
                         <Link to="/dholera" className="home-nav42 bodySmall buttonFilled" onClick={closeMobileMenu}>Dholera</Link>
