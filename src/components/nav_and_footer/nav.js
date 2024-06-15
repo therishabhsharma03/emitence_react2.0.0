@@ -106,7 +106,7 @@ const Nav = () => {
                     {t("about")}
                   </Link>
                   <div className="dropdown">
-                    <span className={`dropdown-toggle bodySmall buttonFilled_nav ${sticky ? 'sticky' : ''}`} onClick={toggleMobileDropdown}>
+                    <span className={`dropdown bodySmall buttonFilled_nav ${sticky ? 'sticky' : ''}`} onClick={toggleMobileDropdown}>
                       Projects
                     </span>
                     {mobileDropdownVisible && (
