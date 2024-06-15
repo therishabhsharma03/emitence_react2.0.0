@@ -1,0 +1,19 @@
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: gold;
+  }
+  
+  .slick-dots li button:before {
+    color: gold;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: goldenrod;
+  }
+  

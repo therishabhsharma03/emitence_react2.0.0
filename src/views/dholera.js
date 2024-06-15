@@ -4,11 +4,18 @@ import { useHistory } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ParallaxComponent from '../components/parallex/ParallaxComponent';
 import './home.css';
+import AutoPlayCarousel from '../components/videos/Carousel_video'; 
 
 const Dholera = (props) => {
   const history = useHistory();
   const isUserLoggedIn = !!localStorage.getItem('user');
-
+  const videos = [
+    { videoId: 'J5kvFv1MUcE', title: 'Dholera SIR' },
+    { videoId: 'smZN9CW39YY', title: 'YouTube Video 2' },
+    // Add more videos as needed
+  ];
+{/* <iframe width="469" height="833" src="https://www.youtube.com/embed/smZN9CW39YY" title="Why Dholera Smart City getting good investment? धोलेरा स्मार्ट सिटी में अच्छा निवेश क्यों हो रहा है?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+  // <iframe width="469" height="833" src="https://www.youtube.com/embed/J5kvFv1MUcE" title="Dholera&#39;s &#39;Semicon City&#39;: India&#39;s Future Semiconductor Hub! 🌟 #dholera #dholerasir #semiconductor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   const handleClick = () => {
     if (!isUserLoggedIn) {
       history.push('/log');
@@ -184,6 +191,8 @@ const Dholera = (props) => {
             <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" />
 
           </div>
+          <h1>Video Carousel</h1>
+          <AutoPlayCarousel videos={videos} />
           <div className="home-features1">
             <div className="home-container02">
               <span className="overline"><br /></span>
