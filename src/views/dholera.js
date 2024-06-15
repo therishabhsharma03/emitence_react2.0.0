@@ -4,11 +4,18 @@ import { useHistory } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ParallaxComponent from '../components/parallex/ParallaxComponent';
 import './home.css';
+import AutoPlayCarousel from '../components/videos/Carousel_video'; 
 
 const Dholera = (props) => {
   const history = useHistory();
   const isUserLoggedIn = !!localStorage.getItem('user');
-
+  const videos = [
+    { videoId: 'J5kvFv1MUcE', title: 'Dholera SIR' },
+    { videoId: 'smZN9CW39YY', title: 'YouTube Video 2' },
+    // Add more videos as needed
+  ];
+{/* <iframe width="469" height="833" src="https://www.youtube.com/embed/smZN9CW39YY" title="Why Dholera Smart City getting good investment? धोलेरा स्मार्ट सिटी में अच्छा निवेश क्यों हो रहा है?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+  // <iframe width="469" height="833" src="https://www.youtube.com/embed/J5kvFv1MUcE" title="Dholera&#39;s &#39;Semicon City&#39;: India&#39;s Future Semiconductor Hub! 🌟 #dholera #dholerasir #semiconductor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   const handleClick = () => {
     if (!isUserLoggedIn) {
       history.push('/log');
@@ -64,6 +71,7 @@ const Dholera = (props) => {
       <div className="App">
         <div className="home-features_dholera">
           <div className="featuresContainer">
+                <AutoPlayCarousel videos={videos} />
             <h2 className='bodyLarge goldText'>Why To Invest In Dholera?</h2>
             <div className='news'>
               <p className="bodySmall">Dholera is a city located in the Indian state of Gujarat. It is known for being
@@ -75,7 +83,7 @@ const Dholera = (props) => {
 
           </div>
         </div>
-        <ParallaxComponent image="/images/emitence_about.jpg" alignment="left" bg_align="right">
+        <ParallaxComponent image="/images/emitence_about.jpg" alignment="right" bg_align="left">
       
 
           <h2 className='bodyLarge goldText'>Planned Smart City</h2>
@@ -93,7 +101,7 @@ const Dholera = (props) => {
         </ParallaxComponent>
         
 
-        <ParallaxComponent image="/images/emitence_dholera.png" alignment="right" bg_align="left">
+        <ParallaxComponent image="/images/emitence_dholera.png" alignment="left" bg_align="right">
           <h2 className='bodyLarge goldText'>Geographical Location</h2>
           <div className='news'>
             {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" /> */}
@@ -109,7 +117,7 @@ const Dholera = (props) => {
         <section className="content-section">
 
         </section>
-        <ParallaxComponent image="/images/dholera_3.jpg" alignment="left" bg_align="right">
+        <ParallaxComponent image="/images/dholera_3.jpg" alignment="right" bg_align="left">
           <h2 className='bodyLarge goldText'>Economic Opportunities</h2>
           <div className='news'>
             {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" /> */}
@@ -184,6 +192,7 @@ const Dholera = (props) => {
             <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" />
 
           </div>
+
           <div className="home-features1">
             <div className="home-container02">
               <span className="overline"><br /></span>

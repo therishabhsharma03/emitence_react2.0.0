@@ -18,6 +18,8 @@ import PropertyPage from './components/PropertyPages/property';
 import Contact_us from './views/contactus';
 import Dholera from './views/dholera';
 import Footer from './components/nav_and_footer/footer';
+import BlogTemplate from './components/blog/blogtemplate';
+import VideoPlayer from './components/videos/youtubeVideo';
 import PropertyDetails from './components/PropertyDetails/propertyDetails';
 
 const App = () => {
@@ -29,7 +31,7 @@ const App = () => {
         <Nav />
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/guide" component={Guide} exact />
+          <Route path="/blog" component={BlogTemplate} exact />
           <Route path="/log" component={Log} exact />
           <Route path='/aboutus' component={About} />
           <Route path='/predictor' component={ImageUploadForm} />
@@ -38,7 +40,6 @@ const App = () => {
           <Route path='/dholera' component={Dholera} />
           <Route path = '/property' component = {PropertyPage} />
           <Route path = '/contactus' component = {Contact_us} />
-          <Route path = '/propertydetails' component = {PropertyDetails} />
           {/* <Route path='/"kidneybeans"' component= {Hero cropName={selectedCrop}} /> */}
           {validCrops.map((crop) => (
             <Route key={crop} path={`/${crop}`}>

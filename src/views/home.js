@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
 import "../i18n.js";
 import { useHistory } from 'react-router-dom'
-
+import AutoPlayCarousel from '../components/videos/Carousel_video'
 import FeatureCard from '../components/FeatureCard/feature-card'
 import Question1 from '../components/question1'
 // import { Link } from '@mui/material';
@@ -14,9 +14,14 @@ import { Link } from 'react-router-dom';
 
 const Home = (props) => {
   const history = useHistory();
-  
+  const videos = [
+    { videoId: '_7SMZ60byps', title: 'Emitence Realty' },
+    { videoId: 'J5kvFv1MUcE', title: 'Dholera SIR' },
+    { videoId: 'smZN9CW39YY', title: 'YouTube Video 2' },
+    // Add more videos as needed
+  ];
   const isUserLoggedIn = !!localStorage.getItem('user');
-
+{/* <iframe width="469" height="833" src="https://www.youtube.com/embed/_7SMZ60byps" title="Emitence Realty/Logo Reviled/@Hiranandani Estate Thane (Mumbai)." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
   const handleClick = () => {
     {!isUserLoggedIn&&(
       history.push('/log')
@@ -243,6 +248,7 @@ const Home = (props) => {
               ></FeatureCard>
             </div>
           </div>
+              <AutoPlayCarousel videos={videos} />
         </div>
       </div>
      
@@ -253,15 +259,15 @@ const Home = (props) => {
           </h1>
           <span className="home-banner-sub-heading bodySmall">
             <span>
-              <span>
-                
-                 {t("home_page_empower_sub")}
+              <span className='justify'>
+              We are committed to turning your real estate dreams into reality with unwavering dedication and precision. Our expert team ensures every detail is meticulously handled, providing you with the best possible experience in finding your perfect property. Whether you're buying, selling, or investing, trust Emitenc Realty to guide you every step of the way.
+                 {/* {t("home_page_empower_sub")} */}
                 
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
               </span>
@@ -270,14 +276,14 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
               </span>
@@ -288,14 +294,14 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
               </span>
@@ -304,14 +310,14 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
               </span>
