@@ -121,6 +121,9 @@
 .buttonFilled:hover {
   background-color: var(--dl-color-custom-primary2);
 }
+.buttonFilled_nav:hover {
+  background-color: var(--dl-color-custom-primary2);
+}
 .buttonFilledSecondary {
   color: var(--dl-color-custom-neutral-light);
   transition: 0.3s;
@@ -284,6 +287,7 @@
   color: var(--dl-color-custom-neutral-light);
   width: 70%;
   display: flex;
+  flex-wrap: wrap; /* Ensure the navbar can wrap items when needed */
   margin: 30px auto; /* Center the navbar horizontally */
   margin-top: 20px; /* Initial margin from the top */
   position: -webkit-sticky; /* For Safari */
@@ -308,12 +312,12 @@
   border-top-right-radius: 50px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  width: 60%; /* Make sure it spans the full width */
-  padding: 15px;
+  padding: 10px;
+  width: 60%; /* Adjust width if needed */
   background-color: rgba(0, 0, 0, 0.747);
-
-
 }
+  
+
 
 .mobileMenu {
   color: var(--dl-color-custom-neutral-dark);
