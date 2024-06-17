@@ -6,7 +6,7 @@
   justify-content: flex-start;
 }
 .feature-card-text {
-  font-weight: 600;
+  font-weight: 300;
   line-height: 28px;
 }
 @media(max-width: 767px) {

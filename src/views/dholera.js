@@ -10,8 +10,8 @@ const Dholera = (props) => {
   const history = useHistory();
   const isUserLoggedIn = !!localStorage.getItem('user');
   const videos = [
-    { videoId: 'J5kvFv1MUcE', title: 'Dholera SIR' },
-    { videoId: 'smZN9CW39YY', title: 'YouTube Video 2' },
+    { videoId: 'J5kvFv1MUcE?rel=0', title: 'Dholera SIR' },
+    { videoId: 'smZN9CW39YY?rel=0', title: 'YouTube Video 2' },
     // Add more videos as needed
   ];
 {/* <iframe width="469" height="833" src="https://www.youtube.com/embed/smZN9CW39YY" title="Why Dholera Smart City getting good investment? धोलेरा स्मार्ट सिटी में अच्छा निवेश क्यों हो रहा है?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}

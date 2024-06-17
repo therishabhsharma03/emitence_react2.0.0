@@ -15,9 +15,9 @@ import { Link } from 'react-router-dom';
 const Home = (props) => {
   const history = useHistory();
   const videos = [
-    { videoId: '_7SMZ60byps', title: 'Emitence Realty' },
-    { videoId: 'J5kvFv1MUcE', title: 'Dholera SIR' },
-    { videoId: 'smZN9CW39YY', title: 'YouTube Video 2' },
+    { videoId: '_7SMZ60byps?rel=0', title: 'Emitence Realty' },
+    { videoId: 'J5kvFv1MUcE?rel=0', title: 'Dholera SIR' },
+    { videoId: 'smZN9CW39YY?rel=0', title: 'YouTube Video 2' },
     // Add more videos as needed
   ];
   const isUserLoggedIn = !!localStorage.getItem('user');
