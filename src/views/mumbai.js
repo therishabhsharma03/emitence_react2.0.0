@@ -65,13 +65,11 @@ const Mumbai = (props) => {
       <div className="App">
         <div className="home-features_dholera">
           <div className="featuresContainer">
-            <h2 className='bodyLarge goldText'>Why To Invest In Dholera?</h2>
+            <h2 className='bodyLarge goldText'>Explore Premier Properties in Mumbai</h2>
             <div className='news'>
-              <p className="bodySmall">Dholera is a city located in the Indian state of Gujarat. It is known for being
-                part of the ambitious Dholera Special Investment Region (DSIR), which is one of
-                the key projects under the Delhi-Mumbai Industrial Corridor (DMIC)</p>
-              {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" />
-              <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
+              <p className="bodySmall">Discover luxurious living spaces from top developers like Lodha, 
+                Hiranandani, and Godrej, offering unparalleled amenities and prime locations. Find your dream 
+                home in the heart of Mumbai with our exclusive listings.</p>
             </div>
           </div>
         </div>
@@ -81,12 +79,12 @@ const Mumbai = (props) => {
           <div>
           <PropertyCard
             imageUrl = "/images/lodha-township-emitence3.jpg"
-            address = "Lodha Township, Mumbai"
-            bedrooms = "3"
-            bathrooms = "2"
-            squareFeet = "2000"
-            type = "Family"
-            price = "₹ 1.5 Cr"
+            address = "Lodha Amara, Mumbai"
+            // bedrooms = "3"
+            // bathrooms = "2"
+            squareFeet = "450 Carpet Area"
+            type = "1bhk"
+            price = "₹ 90 L"
           />
           </div>
         </ParallaxComponent>
@@ -106,7 +104,7 @@ const Mumbai = (props) => {
           </div>
         </ParallaxComponent>
 
-        <ParallaxComponent image="/images/dholera_3.jpg" alignment="left" bg_align="right">
+        <ParallaxComponent image="/images/emitence_godrej.webp" alignment="left" bg_align="right">
           <h2 className='bodyLarge goldText'>Godrej</h2>
           <div>
           <PropertyCard
