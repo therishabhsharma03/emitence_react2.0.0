@@ -13,7 +13,7 @@ import KidneyBeans_Info from './components/crops/KidneyBeans_Info';
 import ImageUploadForm from './views/Pridict';
 import Hero from './components/crops/crop';
 import Crop from './views/crops';
-import Mumabai from './views/mumbai';
+import Mumabai from './views/mumbai_temp';
 import PropertyPage from './components/PropertyPages/property';
 import Contact_us from './views/contactus';
 import Dholera from './views/dholera';
