@@ -20,6 +20,8 @@ import Dholera from './views/dholera';
 import Footer from './components/nav_and_footer/footer';
 import BlogTemplate from './components/blog/blogtemplate';
 import VideoPlayer from './components/videos/youtubeVideo';
+import Privacy from './components/Privacy_Policy/Privacy';
+
 const App = () => {
   // const selectedCrop = 'rice';
   const validCrops = [`rice`,`wheat`, `kidneybeans`, `barley`,'mothbeans','chickpeas  ','pigeonpeas','maize','mungbean','blackgram','lentil','pomegranate','banana','mango','grapes','watermelon','muskmelon','apple','orange','papaya','coconut','cotton','jute','coffee'];
@@ -39,6 +41,7 @@ const App = () => {
           <Route path = '/property' component = {PropertyPage} />
           <Route path = '/contactus' component = {Contact_us} />
           <Route path = '/video' component = {VideoPlayer} />
+          <Route path = '/policy' component = {Privacy} />
           {/* <Route path='/"kidneybeans"' component= {Hero cropName={selectedCrop}} /> */}
           {validCrops.map((crop) => (
             <Route key={crop} path={`/${crop}`}>

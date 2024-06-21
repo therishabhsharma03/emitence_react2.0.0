@@ -81,9 +81,9 @@ measures have been taken to ensure that the city's development is on track. The 
       <footer className="blog-footer">
         <p>© 2024 Emitence Realty & Developers LLP. All rights reserved.</p>
         <div className="social-links">
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
+          {/* <a href="#">Facebook</a>
+          <a href="#">Twitter</a> */}
+          <a href="https://www.instagram.com/_dholera_smart_city?utm_source=qr&igsh=MWF4cms1Z2VpaHA0ZQ==">Instagram</a>
         </div>
       </footer>
     </div>
