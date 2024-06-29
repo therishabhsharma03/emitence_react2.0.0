@@ -8,13 +8,15 @@ const steps = [
     title: "Dheeraj Sharma ",
     position:"Director of Emitence Realty & Developers LLP.",
     description: "At Emitence, we believe in challenging the normal way of doing things and pushing boundaries. Giving our absolute best is not just a target but a way of life for us. We aim to deliver projects that go beyond expectations and have a lasting positive impact on the people living there",
-    image: "/images/Emitence_head.jpeg",
+    position1:"Contact No: +91 91591-55237", 
+    position2:"Email: admin@emitencerealty.com"
+    // image: "/images/Emitence_head.jpeg",
   },
   {
     title: "Sakshi Palival",
-    position:"----Position----",
+    position:"Consultant",
     description: "I work with a very driven and passionate team. Each person brings their commitment to the table. Together, we deal with the complexities of the industry, seeing challenges as opportunities to grow and improve.",
-    image: "/images/Emitence_manager.jpeg",
+    // image: "/images/Emitence_manager.jpeg",
   },
  
 ];
@@ -133,8 +135,10 @@ Emitence Realty and Developers LLP is a real estate advisory firm offering a one
             <div className="home-container03">
               {steps.map((step, index) => (
                 <TeamCards
-                    image={step.image}
+                    // image={step.image}
                     heading = {step.title}
+                    position1 = {step.position1}
+                    position2 = {step.position2}
                     position = {step.position}
                     subHeading={step.description}
                 ></TeamCards>
