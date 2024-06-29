@@ -15,20 +15,24 @@ import { Link } from 'react-router-dom';
 const Home = (props) => {
   const history = useHistory();
   const videos = [
-    { videoId: '_7SMZ60byps', title: 'Emitence Realty' },
-    { videoId: 'J5kvFv1MUcE', title: 'Dholera SIR' },
-    { videoId: 'smZN9CW39YY', title: 'YouTube Video 2' },
+    { videoId: '_7SMZ60byps?rel=0', title: 'Emitence Realty' },
+    { videoId: 'J5kvFv1MUcE?rel=0', title: 'Dholera SIR' },
+    { videoId: 'smZN9CW39YY?rel=0', title: 'YouTube Video 2' },
     // Add more videos as needed
   ];
   const isUserLoggedIn = !!localStorage.getItem('user');
-{/* <iframe width="469" height="833" src="https://www.youtube.com/embed/_7SMZ60byps" title="Emitence Realty/Logo Reviled/@Hiranandani Estate Thane (Mumbai)." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+  {/* <iframe width="469" height="833" src="https://www.youtube.com/embed/_7SMZ60byps" title="Emitence Realty/Logo Reviled/@Hiranandani Estate Thane (Mumbai)." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */ }
   const handleClick = () => {
-    {!isUserLoggedIn&&(
-      history.push('/log')
-    )}
-    {isUserLoggedIn&&(
-      history.push('/predictor')
-    )}
+    {
+      !isUserLoggedIn && (
+        history.push('/log')
+      )
+    }
+    {
+      isUserLoggedIn && (
+        history.push('/predictor')
+      )
+    }
   };
 
   const handleClick1 = () => {
@@ -36,22 +40,22 @@ const Home = (props) => {
   }
 
 
-  const { t} = useTranslation()
-  
+  const { t } = useTranslation()
+
 
 
   return (
     <div className="home-container">
       <div className="home-hero">
         <div className="heroContainer home-hero1">
-{/* ****************************************************************** */}
+          {/* ****************************************************************** */}
 
 
-{/* ************************************************************************* */}
+          {/* ************************************************************************* */}
 
 
 
-      {/* <h1>Ready to find your dream property? Choose your perfect location:</h1> */}
+          {/* <h1>Ready to find your dream property? Choose your perfect location:</h1> */}
           <div className="home-container01">
             <h1 className="home-hero-heading heading1">
               {t("greeting")}
@@ -142,31 +146,35 @@ const Home = (props) => {
                 <span>
                   <span>
                     <span>
-                     {t("features_heading_sub")}
+                      {t("features_heading_sub")}
 
-            <section className='choose_location'>
+                      <section className='choose_location'>
 
-          <div class="locations">
-            <div class="location">
-                <a href="dholera">
-                    <img src="images/dhol1.png" alt="Dholera"/>
-                    <h2 className='bodyMedium'>Dholera</h2>
-                </a>
-          
-            </div>
-            <div class="location">
-              
-              <a href="mumbai">
-                    <img src="images/mum.png" alt="Mumbai"/>
-                    <h2 className='bodyMedium' >Mumbai</h2>
+                        <div class="locations">
+                          <div class="location">
+                            <a href="dholera">
+                              <img src="images/dhol1.png" alt="Dholera" />
+                              <h2 className='bodyMedium ls'>Dholera</h2>
+                              <div class="line-container">
+                                <div class="line"></div>
+                                <h3 className='bodySmall'>Gujarat</h3>
+                                <div class="line"></div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="location">
 
-              </a>
-              
-                {/* <a href="mumbai"> */}
-                {/* </a> */}
-            </div>
-        </div>
-            </section>
+                            <a href="mumbai">
+                              <img src="images/mum.png" alt="Mumbai" />
+                              <h2 className='bodyMedium ls' >Mumbai</h2>
+
+                            </a>
+
+                            {/* <a href="mumbai"> */}
+                            {/* </a> */}
+                          </div>
+                        </div>
+                      </section>
                     </span>
                     <span>
                       <span
@@ -231,7 +239,7 @@ const Home = (props) => {
             </div>
             <div className="home-container03_HOME">
               <FeatureCard
-                heading={t("soil_analysis")} 
+                heading={t("soil_analysis")}
                 subHeading={t("soil_analysis_guidance")}
               ></FeatureCard>
               <FeatureCard
@@ -248,26 +256,26 @@ const Home = (props) => {
               ></FeatureCard>
             </div>
           </div>
-              <AutoPlayCarousel videos={videos} />
+          <AutoPlayCarousel videos={videos} />
         </div>
       </div>
-     
+
       <div className="home-banner">
         <div className="bannerContainer home-banner1">
           <h1 className="home-banner-heading heading2">
-           {t("home_page_empower")}
+            {t("home_page_empower")}
           </h1>
           <span className="home-banner-sub-heading bodySmall">
             <span>
               <span className='justify'>
-              We are committed to turning your real estate dreams into reality with unwavering dedication and precision. Our expert team ensures every detail is meticulously handled, providing you with the best possible experience in finding your perfect property. Whether you're buying, selling, or investing, trust Emitenc Realty to guide you every step of the way.
-                 {/* {t("home_page_empower_sub")} */}
-                
+                We are committed to turning your real estate dreams into reality with unwavering dedication and precision. Our expert team ensures every detail is meticulously handled, providing you with the best possible experience in finding your perfect property. Whether you're buying, selling, or investing, trust Emitenc Realty to guide you every step of the way.
+                {/* {t("home_page_empower_sub")} */}
+
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                      }}
+                    }}
                   />
                 </span>
               </span>
@@ -276,14 +284,14 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                      }}
+                    }}
                   />
                 </span>
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                      }}
+                    }}
                   />
                 </span>
               </span>
@@ -294,14 +302,14 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                      }}
+                    }}
                   />
                 </span>
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                      }}
+                    }}
                   />
                 </span>
               </span>
@@ -310,23 +318,23 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                      }}
+                    }}
                   />
                 </span>
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                      }}
+                    }}
                   />
                 </span>
               </span>
             </span>
           </span>
-         
+
         </div>
       </div>
-     
+
     </div>
   )
 }

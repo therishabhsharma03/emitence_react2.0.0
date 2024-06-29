@@ -13,14 +13,18 @@ import KidneyBeans_Info from './components/crops/KidneyBeans_Info';
 import ImageUploadForm from './views/Pridict';
 import Hero from './components/crops/crop';
 import Crop from './views/crops';
-import Mumabai from './views/mumbai';
+import Mumabai from './views/mumbai_temp';
 import PropertyPage from './components/PropertyPages/property';
 import Contact_us from './views/contactus';
 import Dholera from './views/dholera';
 import Footer from './components/nav_and_footer/footer';
 import BlogTemplate from './components/blog/blogtemplate';
 import VideoPlayer from './components/videos/youtubeVideo';
+<<<<<<< HEAD
 import PropertyDetails from './components/PropertyDetails/propertyDetails';
+=======
+import Privacy from './components/Privacy_Policy/Privacy';
+>>>>>>> dc700ec106b6c77a89a6d6064a61fe727e491f71
 
 const App = () => {
   // const selectedCrop = 'rice';
@@ -40,7 +44,12 @@ const App = () => {
           <Route path='/dholera' component={Dholera} />
           <Route path = '/property' component = {PropertyPage} />
           <Route path = '/contactus' component = {Contact_us} />
+<<<<<<< HEAD
           <Route path = '/propertydetails' component = {PropertyDetails} />
+=======
+          <Route path = '/video' component = {VideoPlayer} />
+          <Route path = '/policy' component = {Privacy} />
+>>>>>>> dc700ec106b6c77a89a6d6064a61fe727e491f71
           {/* <Route path='/"kidneybeans"' component= {Hero cropName={selectedCrop}} /> */}
           {validCrops.map((crop) => (
             <Route key={crop} path={`/${crop}`}>

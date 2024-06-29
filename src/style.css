@@ -88,7 +88,7 @@
   margin: 0px;
   color: var(--dl-color-custom-neutral-light);
   transition: 0.3s;
-  font-family: Cabin;
+  font-family: Poppins;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-oneandhalfunits);
@@ -101,7 +101,7 @@
   margin: 0px;
   color: var(--dl-color-custom-neutral-light);
   transition: 0.3s;
-  font-family: Cabin;
+  font-family: Poppins;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-oneandhalfunits);
@@ -122,12 +122,12 @@
   background-color: var(--dl-color-custom-primary2);
 }
 .buttonFilled_nav:hover {
-  background-color: var(--dl-color-custom-primary2);
+  background-color: #b2a13f;
 }
 .buttonFilledSecondary {
   color: var(--dl-color-custom-neutral-light);
   transition: 0.3s;
-  font-family: Cabin;
+  font-family: poppins;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-oneandhalfunits);
@@ -141,7 +141,7 @@
 .buttonOutline {
   color: var(--dl-color-custom-primary1);
   border: 1px solid;
-  font-family: Cabin;
+  font-family: Poppins;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
   border-color: var(--dl-color-custom-primary1);
@@ -156,7 +156,7 @@
 }
 .buttonFlat {
   color: var(--dl-color-custom-neutral-dark);
-  font-family: Cabin;
+  font-family: Poppins;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-oneandhalfunits);
@@ -356,6 +356,7 @@
   justify-content: center;
   gap: 90px;
   margin-top: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -365,6 +366,7 @@
     gap: 0px;
     margin-top: 20px;
     flex-direction: column;
+    text-align: center;
   }
   
 }
@@ -627,7 +629,7 @@
 }
 .logo {
   font-size: 2em;
-  font-family: Cabin;
+  font-family: Poppins;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
@@ -636,55 +638,55 @@
 .heading11 {
   font-size: 90px;
   text-align: center;
-  font-family: Cabin;
-  font-weight: 700;
+  font-family: Poppins;
+  font-weight: 300;
   line-height: 150%;
 }
 .heading1 {
   font-size: 90px;
   text-align: center;
-  font-family: Cabin;
-  font-weight: 700;
+  font-family: Poppins;
+  font-weight: 300;
   line-height: 150%;
 }
 @media screen and (max-width: 768px) {
   .heading1 {
     font-size: 37px;
-    font-family: Cabin;
-    font-weight: 700;
+    font-family: Poppins;
+    font-weight: 300;
     line-height: 150%;
   }
 }
 .heading2 {
   font-size: 35px;
-  font-family: Cabin;
-  font-weight: 600;
+  font-family: Poppins;
+  font-weight: 300;
   line-height: 150%;
 }
 .heading3 {
   font-size: 20px;
   text-align: center;
-  font-family: Cabin;
-  font-weight: 600;
+  font-family: Poppins;
+  font-weight: 300;
   line-height: 150%;
 }
 .bodyLarge {
-  font-size: 50px;
-  font-family: Cabin;
-  font-weight: 400;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: 200;
   line-height: 150%;
 }
 .bodySmall {
-  font-size: 22px;
-  font-family: Cabin;
-  font-weight: 400;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 200;
   line-height: 150%;
 }
 @media screen and (max-width: 768px) {
   .bodySmall {
     font-size: 14px;
-    font-family: Cabin;
-    font-weight: 400;
+    font-family: Poppins;
+    font-weight: 200;
     line-height: 150%;
   }
   .bodyLarge{
@@ -694,8 +696,8 @@
 @media screen and (min-width: 768px) and (max-width: 1364px) {
   .bodySmall {
     font-size: 15px;
-    font-family: Cabin;
-    font-weight: 400;
+    font-family: Poppins;
+    font-weight: 200;
     line-height: 150%;
   }
   .bodyLarge {
@@ -704,13 +706,13 @@
 }
 .bodyMedium{
   font-size: 28px;
-  font-family: Cabin;
-  font-weight: 400;
+  font-family: Poppins;
+  font-weight: 200;
   line-height: 150%;
 }
 .overline {
   font-size: 12px;
-  font-family: Cabin;
+  font-family: Poppins;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;

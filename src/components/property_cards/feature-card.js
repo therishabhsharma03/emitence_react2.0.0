@@ -64,7 +64,7 @@ const PropertyCard = ({ imageUrl, address, bedrooms, bathrooms, squareFeet, type
         <div className="property-features">
         <div className="feature">
           <FaRulerCombined className="feature-icon" />
-          <span>{squareFeet} sqft</span>
+          <span>{squareFeet} carpet</span>
         </div>
         <div className="feature">
         <MdOutlineFamilyRestroom className="feature-icon" />

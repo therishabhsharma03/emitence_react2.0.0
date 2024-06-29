@@ -1108,6 +1108,7 @@
 .property-card-type,
 .property-card-location {
   margin: 4px 0;
+  
 }
 
 .property_container{
@@ -1185,4 +1186,26 @@ button {
 
 .suggestions li:hover {
   background-color: #000000;
+}
+
+.pad{
+  padding: 20px;
+}
+
+.ls{
+  letter-spacing: 12px;
+}
+.dashes_to_line{
+  text-decoration: line-through;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  flex: 0 1 30px;
+  border-top: 1px solid rgb(255, 255, 255);
+  margin: 0 10px;
 }

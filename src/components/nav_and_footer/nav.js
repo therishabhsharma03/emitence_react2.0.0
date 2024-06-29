@@ -52,7 +52,9 @@ const Nav = () => {
     <div className="home-container">
       <div className="home-header">
         <header data-thq="thq-navbar" className={`navbarContainer home-navbar-interactive ${sticky ? 'sticky' : ''}`}>
-          <img src="images/logo.png" alt="Logo" className="logo" />
+        <a href="/"> 
+         <img src="images/logo.png" alt="Logo" className="logo" />
+        </a> 
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
             <nav className="home-links">
               <Link className={`bodySmall buttonFilled_nav ${sticky ? 'sticky' : ''}`} to="/">

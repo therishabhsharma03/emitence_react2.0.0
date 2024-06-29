@@ -10,8 +10,8 @@ const Dholera = (props) => {
   const history = useHistory();
   const isUserLoggedIn = !!localStorage.getItem('user');
   const videos = [
-    { videoId: 'J5kvFv1MUcE', title: 'Dholera SIR' },
-    { videoId: 'smZN9CW39YY', title: 'YouTube Video 2' },
+    { videoId: 'J5kvFv1MUcE?rel=0', title: 'Dholera SIR' },
+    { videoId: 'smZN9CW39YY?rel=0', title: 'YouTube Video 2' },
     // Add more videos as needed
   ];
 {/* <iframe width="469" height="833" src="https://www.youtube.com/embed/smZN9CW39YY" title="Why Dholera Smart City getting good investment? धोलेरा स्मार्ट सिटी में अच्छा निवेश क्यों हो रहा है?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
@@ -72,7 +72,7 @@ const Dholera = (props) => {
         <div className="home-features_dholera">
           <div className="featuresContainer">
                 <AutoPlayCarousel videos={videos} />
-            <h2 className='bodyLarge goldText'>Why To Invest In Dholera?</h2>
+            <h2 className='bodyLarge goldText pad'>Why To Invest In Dholera?</h2>
             <div className='news'>
               <p className="bodySmall">Dholera is a city located in the Indian state of Gujarat. It is known for being
                 part of the ambitious Dholera Special Investment Region (DSIR), which is one of
