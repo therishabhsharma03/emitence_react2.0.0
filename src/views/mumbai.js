@@ -81,18 +81,6 @@ const Mumbai = (props) => {
               {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" />
               <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
             </div>
-          <h2 className='bodyLarge goldText'>Lodha Township</h2>
-          <div>
-          <PropertyCard
-            imageUrl = "/images/lodha-township-emitence3.jpg"
-            address = "Lodha Amara, Mumbai"
-            // bedrooms = "3"
-            // bathrooms = "2"
-            squareFeet = "450 Carpet Area"
-            type = "1bhk"
-            price = "₹ 90 L"
-          />
-          </div>
         </ParallaxComponent>
         
         <ParallaxComponent image="/images/hiranandani-emitence.jpg" alignment="right" bg_align="left">
@@ -139,24 +127,7 @@ const Mumbai = (props) => {
               <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
             </div>
         </ParallaxComponent>
-
-        <ParallaxComponent image="/images/emitence_godrej.webp" alignment="left" bg_align="right">
-          <h2 className='bodyLarge goldText'>Godrej</h2>
-          <div>
-          <PropertyCard
-            imageUrl = "/images/dholera_3.jpg"
-            address = "Godrej, Mumbai"
-            bedrooms = "3"
-            bathrooms = "2"
-            squareFeet = "2000"
-            type = "Family"
-            price = "₹ 1.5 Cr"
-          />
-          </div>
-        </ParallaxComponent>
       </div>
-      
-      
     </ParallaxProvider>
   );
 };
