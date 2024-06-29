@@ -40,6 +40,7 @@ const App = () => {
           <Route path='/dholera' component={Dholera} />
           <Route path = '/property' component = {PropertyPage} />
           <Route path = '/contactus' component = {Contact_us} />
+          <Route path = '/propertydetails' component = {PropertyDetails} />
           {/* <Route path='/"kidneybeans"' component= {Hero cropName={selectedCrop}} /> */}
           {validCrops.map((crop) => (
             <Route key={crop} path={`/${crop}`}>

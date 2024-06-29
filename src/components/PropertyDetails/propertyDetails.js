@@ -17,6 +17,35 @@ function PropertyDetails() {
       </div>
       {/* </div> */}
     </div>
+    <div className = "property-highlights">
+      <h1 className='heading2 goldText pro-heading'>Property Highlights</h1>
+      <table>
+        <tr>
+          <td>Parking</td>
+          <td>Yes</td>
+          <td>Parking</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Water Supply</td>
+          <td>Yes</td>
+          <td>Water Supply</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Electricity</td>
+          <td>Yes</td>
+          <td>Electricity</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Security</td>
+          <td>Yes</td>
+          <td>Security</td>
+          <td>Yes</td>
+        </tr> 
+      </table>
+    </div>
     </div>  
   );
 }
