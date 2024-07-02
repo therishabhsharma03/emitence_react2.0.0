@@ -3,19 +3,20 @@ import { useHistory } from 'react-router-dom';
 import './BlogTemplate.css';
 
 const blogs = [
-  { title: 'Dholera Smart City Overview', intro: 'An overview of the ambitious Dholera Smart City project.', image: 'images/dhol.png', id: 1 },
+  
+  { title: 'Gujrat’s First Vande Metro: A New Era of Connectivity Between Ahmedabad and Dholera', intro: 'An overview of the ambitious Dholera Smart City project.', image: 'images/dhol.png', id: 1 },
   { title: 'Investment Opportunities in Dholera', intro: 'Exploring investment opportunities in Dholera.', image: 'images/dholera_3.jpg', id: 2 },
   { title: 'Dholera: The Future of Urban Development', intro: 'How Dholera is shaping the future of urban development.', image: 'images/dholera_map.png', id: 3 },
   { title: 'Infrastructure Projects in Dholera', intro: 'A look at the major infrastructure projects in Dholera.', image: 'images/dhol.png', id: 4 },
-  { title: 'Dholera’s Green City Initiative', intro: 'Dholera’s initiatives towards creating a green city.', image: 'images/dholera_3.jpg', id: 5 },
+  { title: 'Dholera’s Green City Initiative', intro: 'Dholera’s initiatives towards creating a green city.', image: 'images/emitence_dholera4.jpg', id: 5 },
   { title: 'Dholera Special Investment Region (SIR)', intro: 'Understanding the Dholera Special Investment Region.', image: 'images/dholera_3.jpg', id: 6 },
   { title: 'Real Estate in Dholera', intro: 'Current trends and future prospects in Dholera’s real estate.', image: 'images/dhol.png', id: 7 },
-  { title: 'Dholera: A Hub for Industries', intro: 'Why Dholera is becoming a hub for various industries.', image: 'images/dholera_3.jpg', id: 8 },
+  { title: 'Dholera: A Hub for Industries', intro: 'Why Dholera is becoming a hub for various industries.', image: 'images/emitence_dholera5.png', id: 8 },
   { title: 'Education Facilities in Dholera', intro: 'Educational infrastructure and opportunities in Dholera.', image: 'images/dholera_3.jpg', id: 9 },
-  { title: 'Healthcare Services in Dholera', intro: 'An overview of healthcare services in Dholera.', image: 'images/dhol.png', id: 10 },
+  { title: 'Healthcare Services in Dholera', intro: 'An overview of healthcare services in Dholera.', image: 'images/emitence_dholera_@.jpg', id: 10 },
   { title: 'Dholera’s Transportation Network', intro: 'How Dholera’s transportation network is evolving.', image: 'images/dhol.png', id: 11 },
-  { title: 'Smart Technologies in Dholera', intro: 'Implementation of smart technologies in Dholera.', image: 'images/dhol.png', id: 12 },
-  { title: 'Tourism in Dholera', intro: 'Tourist attractions and experiences in Dholera.', image: 'images/dhol.png', id: 13 },
+  { title: 'Smart Technologies in Dholera', intro: 'Implementation of smart technologies in Dholera.', image: 'images/emitence_dholera.png', id: 12 },
+  { title: 'Sustainability Initiatives in Dholera', intro: 'Sustainability is integral to Dholera’s vision of a smart, green city that balances economic growth with environmental conservation.', image: 'images/dhol.png', id: 13 },
   { title: 'Living in Dholera', intro: 'A guide to living in Dholera Smart City.', image: 'images/dhol.png', id: 14 },
   { title: 'Dholera’s Water Management System', intro: 'How Dholera manages its water resources.', image: 'images/dhol.png', id: 15 },
   { title: 'Renewable Energy in Dholera', intro: 'The role of renewable energy in Dholera’s development.', image: 'images/dhol.png', id: 16 },

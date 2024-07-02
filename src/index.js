@@ -21,6 +21,8 @@ import Footer from './components/nav_and_footer/footer';
 import BlogTemplate from './components/blog/blogtemplate';
 import VideoPlayer from './components/videos/youtubeVideo';
 import Privacy from './components/Privacy_Policy/Privacy';
+import BlogPost from './components/blog/BlogPost';
+
 
 const App = () => {
   // const selectedCrop = 'rice';
@@ -32,6 +34,7 @@ const App = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/blog" component={BlogTemplate} exact />
+          <Route path="/blog/:id" component={BlogPost} />
           <Route path="/log" component={Log} exact />
           <Route path='/aboutus' component={About} />
           <Route path='/predictor' component={ImageUploadForm} />
