@@ -36,7 +36,7 @@ const ContactUs = () => {
         <h3 className='bodySmall goldText' >Email:</h3>
         <p>admin@emitencerealty.com</p>
         <h3 className='bodySmall goldText'>Call:</h3>
-        <p>+91 92652 59234</p>
+        <p>+91 91591-55237</p>
       </div>
       <div className="contact-form">
         <h3>Name:</h3>
