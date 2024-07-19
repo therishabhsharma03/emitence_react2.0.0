@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import './BlogPost.css';
 
 const blogs = [
-  { id: 1, title: 'Dholera Smart City Overview', author: 'Emitence Realty and Developers LLP',     date: `1st June'24`, content: `
+  { id: 1, title: 'Dholera Smart City Overview', author: 'Emitence Realty and Developers LLP',     date: `5th July'24`, content: `
     <h2>Dholera Smart City Overview</h2>
     <h3>Introduction</h3>
     Emitence Realty and Developers LLP is thrilled to share exciting news about Gujarat's infrastructure development. The Metro Rail Corporation has announced a groundbreaking project: the first Vande Metro train service in Gujarat, set to connect Ahmedabad and Dholera. This initiative promises to revolutionize connectivity and spur economic growth in the region.
@@ -26,7 +26,7 @@ const blogs = [
     id: 2,
     title: 'Investment Opportunities in Dholera',
     author: 'Emitence Realty and Developers LLP',
-    date: `2nd June'24`,
+    date: `4th July'24`,
     content: `
       <h2>Investment Opportunities in Dholera</h2>
       <h3>Introduction</h3>
@@ -67,7 +67,7 @@ const blogs = [
     id: 3,
     title: 'Dholera: The Future of Urban Development',
     author: 'Emitence Realty and Developers LLP',
-    date: `3rd June'24`,
+    date: `3rd July'24`,
     content: `
       <h2>Dholera: The Future of Urban Development</h2>
       <h3>Introduction</h3>
@@ -105,7 +105,7 @@ const blogs = [
     id: 4,
     title: 'Infrastructure Projects in Dholera',
     author: 'Emitence Realty and Developers LLP',
-    date: `5th June'24`,
+    date: `2nd July'24`,
     content: `
       <h2>Infrastructure Projects in Dholera</h2>
       <h3>Introduction</h3>
@@ -144,7 +144,7 @@ const blogs = [
     id: 5,
     title: 'Dholera’s Green City Initiative',
     author: 'Emitence Realty and Developers LLP',
-    date: `6th June'24`,
+    date: `1st July'24`,
     content: `
       <h2>Dholera’s Green City Initiative</h2>
       <h3>Introduction</h3>
