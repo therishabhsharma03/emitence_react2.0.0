@@ -61,7 +61,6 @@ const Mumbai = (props) => {
         </div>
       </div>
 
-
       <div className="App">
         <div className="home-features_dholera">
           <div className="featuresContainer">
@@ -74,56 +73,58 @@ const Mumbai = (props) => {
         </div>
 
         <ParallaxComponent image="/images/lodha_amara_emitence.jpeg" alignment="left" bg_align="right">
-          <h2 className='bodyLarge goldText'>Lodha Amara</h2>
+          <h2 className='bodyLarge goldText'>Hiranandani Estate</h2>
           <div className='news'>
-              <p className="bodySmall">Lodha Amara is a premium residential development located in Thane, near Mumbai, India. Known for its modern amenities and lush green surroundings, it offers a range of apartments with contemporary designs. The complex includes facilities such as a clubhouse, swimming pools, fitness centers, and landscaped gardens. It is designed to provide a high-quality lifestyle with excellent connectivity to major parts of Mumbai and nearby areas, making it a sought-after choice for homebuyers.</p>
-              {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" />
-              <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
+              <p className="bodySmall">Hiranandani Estate is one of Thane's largest and most well-planned townships, offering a mix of residential, commercial, and retail spaces. Known for its well-maintained infrastructure, green spaces, and a variety of amenities like schools, hospitals, and shopping areas within the township.</p>
             </div>
         </ParallaxComponent>
-        
+
         <ParallaxComponent image="/images/dosti_west_county_emitence.jpeg" alignment="right" bg_align="left">
-          <h2 className='bodyLarge goldText'>Dosti West County</h2>
+          <h2 className='bodyLarge goldText'>Lodha Sterling</h2>
           <div className='news'>
-              <p className="bodySmall">Dosti West County is a residential project located in Thane, near Mumbai, India. It offers a variety of apartments with modern amenities and thoughtfully designed layouts. The development features extensive green spaces, recreational facilities, a clubhouse, swimming pool, and sports areas. With its strategic location, Dosti West County provides easy access to major transportation hubs, shopping centers, and educational institutions, making it an attractive option for families and professionals seeking a comfortable and convenient lifestyle.</p>
-              {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" />
-              <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
+              <p className="bodySmall">Lodha Sterling is a luxury residential project inspired by London’s garden city concept. The project offers spacious residences with exclusive amenities such as a private theater, grand clubhouse, and lush green gardens, catering to those looking for high-end living.</p>
             </div>
         </ParallaxComponent>
 
         <ParallaxComponent image="/images/raunak_maximum_city_emitence.png" alignment="left" bg_align="right">
-          <h2 className='bodyLarge goldText'>Raunak Maximum City</h2>
+          <h2 className='bodyLarge goldText'>Lodha Park</h2>
           <div className='news'>
-              <p className="bodySmall">Raunak Maximum City is a residential project in Thane, near Mumbai, India. It features modern apartments with various configurations, designed to cater to different lifestyle needs. The development includes amenities such as a clubhouse, swimming pool, landscaped gardens, and recreational areas. Located strategically, it offers good connectivity to key areas of Mumbai and Thane, making it a desirable option for homebuyers seeking comfort and convenience in a well-planned community.</p>
-              {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" />
-              <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
+              <p className="bodySmall">Lodha Park is an upscale residential project located in South Mumbai, offering luxury apartments with stunning views of the Arabian Sea and the Mumbai skyline. The project includes world-class amenities like a grand clubhouse, swimming pools, landscaped gardens, and more.</p>
             </div>
         </ParallaxComponent>
 
         <ParallaxComponent image="/images/jp_infra_emitence.png" alignment="left" bg_align="left">
-          <h2 className='bodyLarge goldText'>JP Infra</h2>
+          <h2 className='bodyLarge goldText'>Piramal Vaikunth</h2>
           <div className='news'>
-              <p className="bodySmall">JP Infra is a prominent real estate developer in Mumbai, India, known for its innovative and sustainable residential and commercial projects. The company focuses on creating modern living spaces with high-quality construction and thoughtful designs. JP Infra offers a range of amenities in its developments, including landscaped gardens, fitness centers, and recreational areas. With a commitment to customer satisfaction and timely delivery, JP Infra has established a strong presence in the Mumbai real estate market.</p>
-              {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" />
-              <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
+              <p className="bodySmall">Piramal Vaikunth is a premium residential project offering a serene living experience amidst greenery. The development is known for its spacious apartments, lush landscapes, and a host of lifestyle amenities, making it a popular choice for families seeking a tranquil environment close to the city.</p>
             </div>
         </ParallaxComponent>
 
         <ParallaxComponent image="/images/runwal_25_hours_emitence.webp" alignment="left" bg_align="right">
-          <h2 className='bodyLarge goldText'>Runwal 25 Hour's</h2>
+          <h2 className='bodyLarge goldText'>Piramal Revanta</h2>
           <div className='news'>
-              <p className="bodySmall">Runwal 25 Hour's is a residential project located in Thane, near Mumbai, India. It offers a range of modern apartments designed to maximize space and comfort. The project includes amenities like a clubhouse, swimming pool, fitness center, and landscaped gardens, catering to a contemporary lifestyle. Strategically positioned, it provides excellent connectivity to major parts of Mumbai and surrounding areas, making it an appealing choice for those seeking a vibrant community and convenient living.</p>
-              {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" />
-              <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
+              <p className="bodySmall">Piramal Revanta is a modern residential development located in Mulund, offering contemporary living spaces with panoramic views of the surrounding hills and cityscape. The project includes state-of-the-art amenities such as a swimming pool, gym, and landscaped gardens.</p>
             </div>
         </ParallaxComponent>
 
         <ParallaxComponent image="/images/y_square_emitence.png" alignment="left" bg_align="left">
-          <h2 className='bodyLarge goldText'>Y Square</h2>
+          <h2 className='bodyLarge goldText'>Godrej Karjat</h2>
           <div className='news'>
-              <p className="bodySmall">Y Square is a commercial and residential development located in a prime area, offering a blend of modern office spaces and contemporary living options. It features amenities such as shopping areas, dining options, and recreational facilities, designed to provide a convenient and vibrant environment for both residents and businesses. The strategic location ensures excellent connectivity to major hubs and transportation networks, making it an attractive choice for professionals and families seeking a dynamic urban lifestyle.</p>
-              {/* <img src="/images/dholera_news2.jpg" alt="team" className="Emitence_dholera_news" />
-              <img src="/images/dholera_news1.jpeg" alt="team" className="Emitence_dholera_news" /> */}
+              <p className="bodySmall">Godrej Properties' project in Karjat offers affordable yet modern residential options in a picturesque setting. It is designed for those who prefer a quieter, more nature-centric lifestyle, with a range of amenities catering to family needs.</p>
+            </div>
+        </ParallaxComponent>
+
+        <ParallaxComponent image="/images/runwal_25_hours_emitence.webp" alignment="right" bg_align="right">
+          <h2 className='bodyLarge goldText'>Rustomjee La Vie</h2>
+          <div className='news'>
+              <p className="bodySmall">Rustomjee La Vie is a part of Rustomjee's integrated township, offering well-designed residences with ample green spaces and amenities like a clubhouse, sports facilities, and more. The project is designed to offer a balanced lifestyle with easy access to Thane’s commercial hubs.</p>
+            </div>
+        </ParallaxComponent>
+
+        <ParallaxComponent image="/images/jp_infra_emitence.png" alignment="left" bg_align="left">
+          <h2 className='bodyLarge goldText'>Prestige City</h2>
+          <div className='news'>
+              <p className="bodySmall">Prestige City in Mulund is a residential project by Prestige Group, offering a mix of high-rise apartments and luxury villas. The development features extensive amenities including a clubhouse, swimming pool, and landscaped gardens, aimed at providing a premium living experience.</p>
             </div>
         </ParallaxComponent>
       </div>
