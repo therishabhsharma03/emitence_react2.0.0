@@ -24,11 +24,10 @@ const ContactUs = () => {
       <div className="location-info">
         <h3 className='bodySmall goldText'>Location:</h3>
         <p className='bodySmall white'>
-          Office No:- A-342, Lodha Signet, Kolshet Road
+          Office No :- 342, Lodha Signet, Kolshet Road
           <br />
-          Thane
-          <br />
-          West Mumbai (Maharashtra)
+          Thane (W) , 
+          Mumbai (MH)
         </p>
         <h3 className='bodySmall goldText' >Open Hours:</h3>
         <p>10am–7:30pm</p>

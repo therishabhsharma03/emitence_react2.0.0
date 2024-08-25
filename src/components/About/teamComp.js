@@ -14,10 +14,30 @@ const steps = [
   },
   {
     title: "Sakshi Palival",
-    position:"Consultant",
+    position:"Sr. Manager",
     description: "I work with a very driven and passionate team. Each person brings their commitment to the table. Together, we deal with the complexities of the industry, seeing challenges as opportunities to grow and improve.",
     // image: "/images/Emitence_manager.jpeg",
   },
+  {
+    title: "Janhavi Sathe",
+    position:"Manager Sales",
+    description: "In the competitive world of real estate sales, I bring a client-focused approach that builds trust and delivers results. My commitment is to understand the unique needs of each client and match them with the perfect property, ensuring satisfaction and long-term relationships.",
+    // image: "/images/Emitence_manager.jpeg",
+  },
+  {
+    title: "Rohit Pandey",
+    position:"Realty Guide",
+    description: "As a Realty Guide, my mission is to assist clients in making informed decisions. I provide personalized guidance through every step of the buying process, ensuring that they feel confident and supported from the initial inquiry to the final purchase.",
+    // image: "/images/Emitence_manager.jpeg",
+  },
+  {
+    title: "KumKum Upadhayay",
+    position:"Realty Guide",
+    description: "Guiding clients through their real estate journey is my passion. I focus on understanding their desires and needs, offering insights and advice that help them find the perfect property. My goal is to make the process seamless and enjoyable for every client.",
+    // image: "/images/Emitence_manager.jpeg",
+  },
+ 
+ 
  
 ];
 const Team = () => {

@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom'
 import AutoPlayCarousel from '../components/videos/Carousel_video'
 import FeatureCard from '../components/FeatureCard/feature-card'
 import Question1 from '../components/question1'
+import PhotoCollage from '../components/clients_collage/PhotoCollage.js';
 // import { Link } from '@mui/material';
 import { Link } from 'react-router-dom';
 // import './home.css'
@@ -13,6 +14,7 @@ import { Link } from 'react-router-dom';
 //import MyForm from '../components/Form'
 
 const Home = (props) => {
+  const photos = Array.from({ length: 27 }, (_, i) => `images/clients/${i + 1}.jpeg`);
   const history = useHistory();
   const videos = [
     { videoId: '_7SMZ60byps?rel=0', title: 'Emitence Realty' },
@@ -270,7 +272,6 @@ const Home = (props) => {
               <span className='justify'>
                 We are committed to turning your real estate dreams into reality with unwavering dedication and precision. Our expert team ensures every detail is meticulously handled, providing you with the best possible experience in finding your perfect property. Whether you're buying, selling, or investing, trust Emitenc Realty to guide you every step of the way.
                 {/* {t("home_page_empower_sub")} */}
-
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
@@ -302,14 +303,14 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
                 <span>
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
               </span>
@@ -318,7 +319,7 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
                 <span>
@@ -333,6 +334,77 @@ const Home = (props) => {
           </span>
 
         </div>
+      </div>
+
+
+
+
+
+      <div className="home-banner">
+        <div className="bannerContainer home-banner1">
+          <span className="home-banner-sub-heading bodySmall">
+            <span>
+          <h1 className="home-banner-heading heading2 gold">
+          " Emitence: Where Dreams Are Delivered with a Smile "
+          </h1>
+                  
+              <span className='justify'>
+              <PhotoCollage photos={photos} />
+              
+           
+             
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+              </span>
+            </span>
+            <span>
+              <span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                      }}
+                  />
+                </span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                      }}
+                  />
+                </span>
+              </span>
+              <span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                      }}
+                  />
+                </span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+              </span>
+            </span>
+          </span>
+
+        </div>
+      </div>
+      <div className="home-photos">
+      <h1 className="home-banner-heading heading2">
+            dsfa
+          </h1>
+{/* <PhotoCollage photos={photos} /> */}
       </div>
 
     </div>

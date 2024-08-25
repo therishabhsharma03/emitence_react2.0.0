@@ -10,8 +10,10 @@ const Footer = () => {
             <div className="widget">
               <h3>Contact</h3>
               <address>
-                Office No:- A-342, Lodha Signet, Kolshet Road Thane <br />
-                West Mumbai (Maharashtra)<br />
+              Office No :- 342, Lodha Signet, Kolshet Road
+          <br />
+          Thane (W) , 
+          Mumbai (MH)
               </address>
               <ul className="list-unstyled links">
                 <li><a href="tel://919159155237">+91 91591-55237</a></li>
